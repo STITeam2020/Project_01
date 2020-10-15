@@ -18,7 +18,46 @@ It therefore consists to develop a very simple web application which allow users
   In the other hand ,If you use the application as an collaborator ,you will get the same features as the administrator in the point (2) and (3) .  
   
 ### Main structure 
-
+```shell
+├───databases
+│       database.sqlite
+│
+└───html
+    │   addingUser.php
+    │   addingUserPage.php
+    │   deleteUser.php
+    │   doDetails.php
+    │   editPassword.php
+    │   editPasswordPage.php
+    │   editUser.php
+    │   editUserPage.php
+    │   header.php
+    │   includes.php
+    │   index.php
+    │   link.php
+    │   listUser.php
+    │   login.php
+    │   loginPage.php
+    │   logout.php
+    │   messageDetails.php
+    │   phpliteadmin.php
+    │   sentBox.php
+    │   success.php
+    │   write.php
+    │   writeMessagePage.php
+    │
+    ├───assets
+    │   ├───bootstrap
+    │   ├───css
+    │   └───img
+    │
+    ├───controller
+    │       Message.php
+    │       User.php
+    │
+    └───dataManager
+            Db.php
+```
 ### Quick start
 ### How to use 
  
