@@ -19,7 +19,9 @@ It therefore consists to develop a very simple web application which allow users
   
 ### Main structure 
 
-```shell
+The following scheme provide a brief description of each used files in the project : 
+
+```bash
           File                   |           Use
 ---------------------------------|---------------------------------------------
 ├───databases                ----> Contain the database 
