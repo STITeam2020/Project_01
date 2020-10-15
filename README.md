@@ -1,7 +1,9 @@
  
 # Messaging app                                                                                                        
 
-                                                                        ![](picture/logo.png)                                                                                  
+                                                                       <p align="center">
+  <img width="200" height="200" src=picture/logo.jpg>
+</p>                                                                                 
 ### Introduction 
 
  This  projects is developed within the scope of the course Internet Technology Security ,as a part of a main project of Security and vulnerability .
