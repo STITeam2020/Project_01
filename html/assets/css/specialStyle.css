@@ -1,0 +1,132 @@
+html, body, main {
+	height : 100%;
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 15px; /* 5px rounded corners */
+  padding: 10px 10px;
+  width : 50%;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
+
+h1 {
+	font-family: 'Roboto';
+	font-size: 15px;
+}
+
+
+/* ----------------------------------------------------- */
+
+
+.content{
+    margin: auto;
+    margin-top: 40px;
+}
+.app-bar{
+    background-color: #DEE4E7;
+    display: block;
+    border-right-style: solid;
+    border-right-color: rgb(204,204,204);
+    border-right-width: 1px;
+    padding-top: 15px;
+    height: 100%;
+}
+
+.app-name span{
+    font-size: 2rem;
+}
+
+
+
+.app-name,.menu-name,.user-info{
+    margin: auto;
+}
+
+.panel {
+    margin: 20px;
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+}
+
+.panel-primary {
+    border-color: #ade0c1;
+}
+
+.panel-primary > .panel-heading {
+    color: #fff;
+    background-color: #ade0c1;
+    border-color: #ade0c1;
+}
+
+.panel-heading {
+    padding: 10px 15px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+.panel-body {
+    padding: 15px;
+}
+
+.submit{
+    background-color: #ade0c1;
+    color: white;
+}
+
+.pagination {
+    display: inline-block;
+    padding-left: 0;
+    margin: 20px 0;
+    border-radius: 4px;
+}
+
+.pagination > li {
+    display: inline;
+}
+
+.pagination > li > a, .pagination > li > span {
+    position: relative;
+    float: left;
+    padding: 6px 12px;
+    margin-left: -1px;
+    line-height: 1.42857143;
+    color: #ade0c1;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+/* --------------------------------------------------------- */
+
+.content{
+    margin: auto;
+}
+
+.modify{
+    border-style: solid;
+    border-radius: 10px;
+    background-color: #ade0c1;
+    color: white;
+}
+
+.delete{
+    border-style: solid;
+    border-radius: 10px;
+    background-color: grey;
+    color: white;
+}

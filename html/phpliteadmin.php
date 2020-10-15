@@ -56,7 +56,7 @@ $subdirectories = false;
 //if any of the databases do not exist as they are referenced by their path, they will be created automatically
 $databases = array(
 	array(
-		'path'=> '/usr/share/nginx/databases/database.sqlite',
+		'path'=> '/usr/share/nginx/databases/dataManager.sqlite',
 		'name'=> 'Database 1'
 	),
 );
@@ -108,7 +108,7 @@ $cookie_name = 'pla3412';
 $debug = false;
 
 // the user is allowed to create databases with only these extensions
-$allowed_extensions = array('db','db3','sqlite','sqlite3');
+$allowed_extensions = array('dataManager','db3','sqlite','sqlite3');
 
 
 // English language-texts.
@@ -156,7 +156,7 @@ $lang = array(
 "edit" => "Edit",
 "del" => "Delete",
 "add" => "Add",
-"backup" => "Backup database file",
+"backup" => "Backup dataManager file",
 	"before" => "Before",
 	"after" => "After",
 	"passwd" => "Password",
@@ -172,37 +172,37 @@ $lang = array(
 	"sqlite_ext" => "SQLite extension",
 	"sqlite_ext_support" => "It appears that none of the supported SQLite library extensions are available in your installation of PHP. You may not use %s until you install at least one of them.",
 	"sqlite_v" => "SQLite version",
-	"sqlite_v_error" => "It appears that your database is of SQLite version %s but your installation of PHP does not contain the necessary extensions to handle this version. To fix the problem, either delete the database and allow %s to create it automatically or recreate it manually as SQLite version %s.",
+	"sqlite_v_error" => "It appears that your dataManager is of SQLite version %s but your installation of PHP does not contain the necessary extensions to handle this version. To fix the problem, either delete the dataManager and allow %s to create it automatically or recreate it manually as SQLite version %s.",
 	"report_issue" => "The problem cannot be diagnosed properly. Please file an issue report at",
 	"sqlite_limit" => "Due to the limitations of SQLite, only the field name and data type can be modified.",
 	
 	"php_v" => "PHP version",
 	"new_version" => "There is a new version!",
 	
-	"db_dump" => "database dump",
-	"db_f" => "database file",
+	"db_dump" => "dataManager dump",
+	"db_f" => "dataManager file",
 	"db_ch" => "Change Database",
 	"db_event" => "Database Event",
 	"db_name" => "Database name",
 	"db_rename" => "Rename Database",
 	"db_renamed" => "Database '%s' has been renamed to",
 	"db_del" => "Delete Database",
-	"db_path" => "Path to database",
-	"db_size" => "Size of database",
+	"db_path" => "Path to dataManager",
+	"db_size" => "Size of dataManager",
 	"db_mod" => "Database last modified",
 	"db_create" => "Create New Database",
-	"db_vac" => "The database, '%s', has been VACUUMed.",
-	"db_not_writeable" => "The database, '%s', does not exist and cannot be created because the containing directory, '%s', is not writable. The application is unusable until you make it writable.",
-	"db_setup" => "There was a problem setting up your database, %s. An attempt will be made to find out what's going on so you can fix the problem more easily",
-	"db_exists" => "A database, other file or directory of the name '%s' already exists.",
+	"db_vac" => "The dataManager, '%s', has been VACUUMed.",
+	"db_not_writeable" => "The dataManager, '%s', does not exist and cannot be created because the containing directory, '%s', is not writable. The application is unusable until you make it writable.",
+	"db_setup" => "There was a problem setting up your dataManager, %s. An attempt will be made to find out what's going on so you can fix the problem more easily",
+	"db_exists" => "A dataManager, other file or directory of the name '%s' already exists.",
 	
 	"exported" => "Exported",
 	"struct" => "Structure",
 	"struct_for" => "structure for",
 	"on_tbl" => "on table",
 	"data_dump" => "Data dump for",
-	"backup_hint" => "Hint: To backup your database, the easiest way is to %s.",
-	"backup_hint_linktext" => "download the database-file",
+	"backup_hint" => "Hint: To backup your dataManager, the easiest way is to %s.",
+	"backup_hint_linktext" => "download the dataManager-file",
 	"total_rows" => "a total of %s rows",
 	"total" => "Total",
 	"not_dir" => "The directory you specified to scan for databases does not exist or is not a directory.",
@@ -212,17 +212,17 @@ $lang = array(
 	"free_software" => "This is free software.",
 	"please_donate" => "Please donate.",
 	"remember" => "Remember me",
-	"no_db" => "Welcome to %s. It appears that you have selected to scan a directory for databases to manage. However, %s could not find any valid SQLite databases. You may use the form below to create your first database.",
+	"no_db" => "Welcome to %s. It appears that you have selected to scan a directory for databases to manage. However, %s could not find any valid SQLite databases. You may use the form below to create your first dataManager.",
 	"no_db2" => "The directory you specified does not contain any existing databases to manage, and the directory is not writable. This means you can't create any new databases using %s. Either make the directory writable or manually upload databases to the directory.",
 	
 	"create" => "Create",
 	"created" => "has been created",
 	"create_tbl" => "Create new table",
-	"create_tbl_db" => "Create new table on database",
+	"create_tbl_db" => "Create new table on dataManager",
 	"create_trigger" => "Creating new trigger on table",
 	"create_index" => "Creating new index on table",
 	"create_index1" => "Create Index",
-	"create_view" => "Create new view on database",
+	"create_view" => "Create new view on dataManager",
 	
 	"trigger" => "Trigger",
 	"triggers" => "Triggers",
@@ -271,7 +271,7 @@ $lang = array(
 	"showing_rows" => "Showing rows",
 	"query_time" => "(Query took %s sec)",
 	"syntax_err" => "There is a problem with the syntax of your query (Query was not executed)",
-	"run_sql" => "Run SQL query/queries on database '%s'",
+	"run_sql" => "Run SQL query/queries on dataManager '%s'",
 	"recent_queries" => "Recent Queries",
 	"full_texts" => "Show full texts",
 	"no_full_texts" => "Shorten long texts",
@@ -280,7 +280,7 @@ $lang = array(
 	"ques_drop" => "Are you sure you want to drop the table '%s'?",
 	"ques_drop_view" => "Are you sure you want to drop the view '%s'?",
 	"ques_del_rows" => "Are you sure you want to delete row(s) %s from table '%s'?",
-	"ques_del_db" => "Are you sure you want to delete the database '%s'?",
+	"ques_del_db" => "Are you sure you want to delete the dataManager '%s'?",
 	"ques_column_delete" => "Are you sure you want to delete column(s) %s from table '%s'?",
 	"ques_del_index" => "Are you sure you want to delete index '%s'?",
 	"ques_del_trigger" => "Are you sure you want to delete trigger '%s'?",
@@ -312,7 +312,7 @@ $lang = array(
 	"unchk_all" => "Uncheck All",
 	"with_sel" => "With Selected",
 	
-	"no_tbl" => "No table in database.",
+	"no_tbl" => "No table in dataManager.",
 	"no_chart" => "If you can read this, it means the chart could not be generated. The data you are trying to view may not be appropriate for a chart.",
 	"no_rows" => "There are no rows in the table for the range you selected.",
 	"no_sel" => "You did not select anything.",
@@ -341,7 +341,7 @@ $lang = array(
 	"add_flds" => "Add Fields",
 	"edit_col" => "Editing column '%s'",
 	"vac" => "Vacuum",
-	"vac_desc" => "Large databases sometimes need to be VACUUMed to reduce their footprint on the server. Click the button below to VACUUM the database '%s'.",
+	"vac_desc" => "Large databases sometimes need to be VACUUMed to reduce their footprint on the server. Click the button below to VACUUM the dataManager '%s'.",
 	"event" => "Event",
 	"each_row" => "For Each Row",
 	"define_index" => "Define index properties",
@@ -353,7 +353,7 @@ $lang = array(
 	"warn0" => "You have been warned.",
 	"warn_passwd" => "You are using the default password, which can be dangerous. You can change it easily at the top of %s.",
 	"warn_dumbass" => "You didn't change the value dumbass ;-)",
-	"counting_skipped" => "Counting of records has been skipped for some tables because your database is comparably big and some tables don't have primary keys assigned to them so counting might be slow. Add a primary key to these tables or %sforce counting%s.",
+	"counting_skipped" => "Counting of records has been skipped for some tables because your dataManager is comparably big and some tables don't have primary keys assigned to them so counting might be slow. Add a primary key to these tables or %sforce counting%s.",
 	"sel_state" => "Select Statement",
 	"delimit" => "Delimiter",
 	"back_top" => "Back to Top",
@@ -363,10 +363,10 @@ $lang = array(
 	
 	"delete_only_managed" => "You can only delete databases managed by this tool!",
 	"rename_only_managed" => "You can only rename databases managed by this tool!",
-	"db_moved_outside" => "You either tried to move the database into a directory where it cannot be managed anylonger, or the check if you did this failed because of missing rights.",
+	"db_moved_outside" => "You either tried to move the dataManager into a directory where it cannot be managed anylonger, or the check if you did this failed because of missing rights.",
 	"extension_not_allowed" => "The extension you provided is not within the list of allowed extensions. Please use one of the following extensions",
 	"add_allowed_extension" => "You can add extensions to this list by adding your extension to \$allowed_extensions in the configuration.",
-	"directory_not_writable" => "The database-file itself is writable, but to write into it, the containing directory needs to be writable as well. This is because SQLite puts temporary files in there for locking.",
+	"directory_not_writable" => "The dataManager-file itself is writable, but to write into it, the containing directory needs to be writable as well. This is because SQLite puts temporary files in there for locking.",
 	"tbl_inexistent" => "Table %s does not exist",
 
 	// errors that can happen when ALTER TABLE fails. You don't necessarily have to translate these.
@@ -383,11 +383,11 @@ $lang = array(
 	/* Help documentation */
 	"help_doc" => "Help Documentation",
 	"help1" => "SQLite Library Extensions",
-	"help1_x" => "%s uses PHP library extensions that allow interaction with SQLite databases. Currently, %s supports PDO, SQLite3, and SQLiteDatabase. Both PDO and SQLite3 deal with version 3 of SQLite, while SQLiteDatabase deals with version 2. So, if your PHP installation includes more than one SQLite library extension, PDO and SQLite3 will take precedence to make use of the better technology. However, if you have existing databases that are of version 2 of SQLite, %s will be forced to use SQLiteDatabase for only those databases. Not all databases need to be of the same version. During the database creation, however, the most advanced extension will be used.",
+	"help1_x" => "%s uses PHP library extensions that allow interaction with SQLite databases. Currently, %s supports PDO, SQLite3, and SQLiteDatabase. Both PDO and SQLite3 deal with version 3 of SQLite, while SQLiteDatabase deals with version 2. So, if your PHP installation includes more than one SQLite library extension, PDO and SQLite3 will take precedence to make use of the better technology. However, if you have existing databases that are of version 2 of SQLite, %s will be forced to use SQLiteDatabase for only those databases. Not all databases need to be of the same version. During the dataManager creation, however, the most advanced extension will be used.",
 	"help2" => "Creating a New Database",
-	"help2_x" => "When you create a new database, the name you entered will be appended with the appropriate file extension (.db, .db3, .sqlite, etc.) if you do not include it yourself. The database will be created in the directory you specified as the \$directory variable.",
+	"help2_x" => "When you create a new dataManager, the name you entered will be appended with the appropriate file extension (.dataManager, .db3, .sqlite, etc.) if you do not include it yourself. The dataManager will be created in the directory you specified as the \$directory variable.",
 	"help3" => "Tables vs. Views",
-	"help3_x" => "On the main database page, there is a list of tables and views. Since views are read-only, certain operations will be disabled. These disabled operations will be apparent by their omission in the location where they should appear on the row for a view. If you want to change the data for a view, you need to drop that view and create a new view with the appropriate SELECT statement that queries other existing tables. For more information, see <a href='http://en.wikipedia.org/wiki/View_(database)' target='_blank'>http://en.wikipedia.org/wiki/View_(database)</a>",
+	"help3_x" => "On the main dataManager page, there is a list of tables and views. Since views are read-only, certain operations will be disabled. These disabled operations will be apparent by their omission in the location where they should appear on the row for a view. If you want to change the data for a view, you need to drop that view and create a new view with the appropriate SELECT statement that queries other existing tables. For more information, see <a href='http://en.wikipedia.org/wiki/View_(dataManager)' target='_blank'>http://en.wikipedia.org/wiki/View_(dataManager)</a>",
 	"help4" => "Writing a Select Statement for a New View",
 	"help4_x" => "When you create a new view, you must write an SQL SELECT statement that it will use as its data. A view is simply a read-only table that can be accessed and queried like a regular table, except it cannot be modified through insertion, column editing, or row editing. It is only used for conveniently fetching data.",
 	"help5" => "Export Structure to SQL File",
@@ -397,7 +397,7 @@ $lang = array(
 	"help7" => "Add Drop Table to Exported SQL File",
 	"help7_x" => "During the process for exporting to an SQL file, you may choose to include queries to DROP the existing tables before adding them so that problems do not occur when trying to create tables that already exist.",
 	"help8" => "Add Transaction to Exported SQL File",
-	"help8_x" => "During the process for exporting to an SQL file, you may choose to wrap the queries around a TRANSACTION so that if an error occurs at any time during the importation process using the exported file, the database can be reverted to its previous state, preventing partially updated data from populating the database.",
+	"help8_x" => "During the process for exporting to an SQL file, you may choose to wrap the queries around a TRANSACTION so that if an error occurs at any time during the importation process using the exported file, the dataManager can be reverted to its previous state, preventing partially updated data from populating the dataManager.",
 	"help9" => "Add Comments to Exported SQL File",
 	"help9_x" => "During the process for exporting to an SQL file, you may choose to include comments that explain each step of the process so that a human can better understand what is happening."
 
@@ -611,7 +611,7 @@ function subString($str)
 	return $str;
 }
 
-// checks the (new) name of a database file  
+// checks the (new) name of a dataManager file
 function checkDbName($name)
 {
 	global $allowed_extensions;
@@ -626,9 +626,9 @@ function checkDbName($name)
 
 }
 
-// check whether a path is a db managed by this tool
+// check whether a path is a dataManager managed by this tool
 // requires that $databases is already filled!
-// returns the key of the db if managed, false otherwise.
+// returns the key of the dataManager if managed, false otherwise.
 function isManagedDB($path)
 {
 	global $databases;
@@ -636,12 +636,12 @@ function isManagedDB($path)
 	{
 		if($path == $database['path'])
 		{
-			// a db we manage. Thats okay.
+			// a dataManager we manage. Thats okay.
 			// return the key.
 			return $db_key;
 		}
 	}
-	// not a db we manage!
+	// not a dataManager we manage!
 	return false;
 }
 
@@ -672,11 +672,11 @@ if (isset($_POST['logout']))
 else if (isset($_POST['login']) && isset($_POST['password']))
 	$auth->attemptGrant($_POST['password'], isset($_POST['remember']));
 
-//- Actions on database files and bulk data
+//- Actions on dataManager files and bulk data
 if ($auth->isAuthorized())
 {
 
-	//- Create a new database
+	//- Create a new dataManager
 	if(isset($_POST['new_dbname']))
 	{
 		if($_POST['new_dbname']=='')
@@ -724,7 +724,7 @@ if ($auth->isAuthorized())
 				
 				if(@!is_file($arr[$i])) continue;
 				$con = file_get_contents($arr[$i], NULL, NULL, 0, 60);
-				if(strpos($con, "** This file contains an SQLite 2.1 database **", 0)!==false || strpos($con, "SQLite format 3", 0)!==false)
+				if(strpos($con, "** This file contains an SQLite 2.1 dataManager **", 0)!==false || strpos($con, "SQLite format 3", 0)!==false)
 				{
 					$databases[$j]['path'] = $arr[$i];
 					if($subdirectories===false)
@@ -773,11 +773,11 @@ if ($auth->isAuthorized())
 	if(isset($_SESSION[COOKIENAME.'currentDB']) && isManagedDB($_SESSION[COOKIENAME.'currentDB']['path']) === false)
 		unset($_SESSION[COOKIENAME.'currentDB']);
 	
-	//- Delete an existing database
+	//- Delete an existing dataManager
 	if(isset($_GET['database_delete']))
 	{
 		$dbpath = $_POST['database_delete'];
-		// check whether $dbpath really is a db we manage
+		// check whether $dbpath really is a dataManager we manage
 		$checkDB = isManagedDB($dbpath);
 		if($checkDB !== false)
 		{
@@ -787,7 +787,7 @@ if ($auth->isAuthorized())
 		} else die($lang['err'].': '.$lang['delete_only_managed']);
 	}
 	
-	//- Rename an existing database
+	//- Rename an existing dataManager
 	if(isset($_GET['database_rename']))
 	{
 		$oldpath = $_POST['oldname'];
@@ -831,7 +831,7 @@ if ($auth->isAuthorized())
 	}
 
 	
-	//- Export (download a dump) an existing database
+	//- Export (download a dump) an existing dataManager
 	if(isset($_POST['export']))
 	{
 		$export_filename = str_replace(array("\r", "\n"), '',$_POST['filename']); // against http header injection (php < 5.1.2 only)
@@ -879,7 +879,7 @@ if ($auth->isAuthorized())
 		exit();
 	}
 	
-	//- Import a file into an existing database
+	//- Import a file into an existing dataManager
 	if(isset($_POST['import']))
 	{
 		$db = new Database($_SESSION[COOKIENAME.'currentDB']);
@@ -899,7 +899,7 @@ if ($auth->isAuthorized())
 			$importSuccess = $db->import_csv($_FILES["file"]["tmp_name"], $_POST['single_table'], $field_terminate, $field_enclosed, $field_escaped, $null, $fields_in_first_row);
 		}
 	}
-	//- Download (backup) a database file (as SQLite file, not as dump)
+	//- Download (backup) a dataManager file (as SQLite file, not as dump)
 	if(isset($_GET['download']) && isManagedDB($_GET['download'])!==false)
 	{
 		header("Content-type: application/octet-stream");
@@ -1018,17 +1018,17 @@ if(!$auth->isAuthorized())
 
 //- User is authorized, display the main application
 
-//- Select database (from session or first available)
+//- Select dataManager (from session or first available)
 if(!isset($_SESSION[COOKIENAME.'currentDB']) && count($databases)>0)
 {
-	//set the current database to the first existing one in the array (default)
+	//set the current dataManager to the first existing one in the array (default)
 	$_SESSION[COOKIENAME.'currentDB'] = reset($databases);
 }
 if(sizeof($databases)>0)
 	$currentDB = $_SESSION[COOKIENAME.'currentDB'];
-else // the database array is empty, offer to create a new database
+else // the dataManager array is empty, offer to create a new dataManager
 {
-	//- HTML: form to create a new database, exit
+	//- HTML: form to create a new dataManager, exit
 	if($directory!==false && is_writable($directory))
 	{
 		echo "<div class='confirm' style='margin:20px;'>";
@@ -1057,7 +1057,7 @@ else // the database array is empty, offer to create a new database
 	exit();
 }
 
-//- Switch to a different database with drop-down menu
+//- Switch to a different dataManager with drop-down menu
 if(isset($_POST['database_switch']))
 {
 	foreach($databases as $db_id => $database)
@@ -1085,7 +1085,7 @@ else if(isset($_GET['switchdb']))
 if(isset($_SESSION[COOKIENAME.'currentDB']) && in_array($_SESSION[COOKIENAME.'currentDB'], $databases))
 	$currentDB = $_SESSION[COOKIENAME.'currentDB'];
 
-//- Open database (creates a Database object)
+//- Open dataManager (creates a Database object)
 $db = new Database($currentDB); //create the Database object
 $db->registerUserFunction($custom_functions);
 
@@ -1602,7 +1602,7 @@ echo "<a href='http://www.gnu.org/licenses/gpl.html' target='_blank'>".$lang['li
 echo "<a href='".PROJECT_URL."' target='_blank'>".$lang['proj_site']."</a>";
 echo "</div>";
 
-//- HTML: database list
+//- HTML: dataManager list
 echo "<fieldset style='margin:15px;'><legend><b>".$lang['db_ch']."</b></legend>";
 if(sizeof($databases)<10) //if there aren't a lot of databases, just show them as a list of links instead of drop down menu
 {
@@ -1663,7 +1663,7 @@ if($j==0)
 	echo $lang['no_tbl'];
 echo "</fieldset>";
 
-//- HTML: form to create a new database
+//- HTML: form to create a new dataManager
 if($directory!==false && is_writable($directory))
 {
 	echo "<fieldset style='margin:15px;'><legend><b>".$lang['db_create']."</b> ".helpLink($lang['help2'])."</legend>"; 
@@ -2228,7 +2228,7 @@ if(isset($_GET['action']) && !isset($_GET['confirm']))
 				{
 					if($target_table_type == 'view')
 					{
-						echo sprintf($lang['readonly_tbl'], htmlencode($target_table))." <a href='http://en.wikipedia.org/wiki/View_(database)' target='_blank'>http://en.wikipedia.org/wiki/View_(database)</a>"; 
+						echo sprintf($lang['readonly_tbl'], htmlencode($target_table))." <a href='http://en.wikipedia.org/wiki/View_(dataManager)' target='_blank'>http://en.wikipedia.org/wiki/View_(dataManager)</a>";
 						echo "<br/><br/>";	
 					}
 
@@ -2526,7 +2526,7 @@ if(isset($_GET['action']) && !isset($_GET['confirm']))
 				
 				if($target_table_type == 'view')
 				{
-					echo sprintf($lang['readonly_tbl'], htmlencode($target_table))." <a href='http://en.wikipedia.org/wiki/View_(database)' target='_blank'>http://en.wikipedia.org/wiki/View_(database)</a>"; 
+					echo sprintf($lang['readonly_tbl'], htmlencode($target_table))." <a href='http://en.wikipedia.org/wiki/View_(dataManager)' target='_blank'>http://en.wikipedia.org/wiki/View_(dataManager)</a>";
 					echo "<br/><br/>";	
 				}
 				
@@ -3545,7 +3545,7 @@ if(isset($_GET['action']) && !isset($_GET['confirm']))
 $view = "structure";
 
 //- HMTL: tabs for databases	
-if(!$target_table && !isset($_GET['confirm']) && (!isset($_GET['action']) || (isset($_GET['action']) && $_GET['action']!="table_create"))) //the absence of these fields means we are viewing the database homepage
+if(!$target_table && !isset($_GET['confirm']) && (!isset($_GET['action']) || (isset($_GET['action']) && $_GET['action']!="table_create"))) //the absence of these fields means we are viewing the dataManager homepage
 {
 	$view = isset($_GET['view']) ? $_GET['view'] : 'structure';
 
@@ -3941,7 +3941,7 @@ if(!$target_table && !isset($_GET['confirm']) && (!isset($_GET['action']) || (is
 	}
 	else if($view=="vacuum")
 	{
-		//- Vacuum database confirmation (=vacuum)
+		//- Vacuum dataManager confirmation (=vacuum)
 		if(isset($_POST['vacuum']))
 		{
 			$query = "VACUUM";
@@ -4069,7 +4069,7 @@ if(!$target_table && !isset($_GET['confirm']) && (!isset($_GET['action']) || (is
 	}
 	else if($view=="rename")
 	{
-		//- Rename database confirmation (=rename)
+		//- Rename dataManager confirmation (=rename)
 		if(isset($extension_not_allowed))
 		{
 			echo "<div class='confirm'>";
@@ -4103,7 +4103,7 @@ if(!$target_table && !isset($_GET['confirm']) && (!isset($_GET['action']) || (is
 	}
 	else if($view=="delete")
 	{
-		//- Delete database confirmation (=delete)
+		//- Delete dataManager confirmation (=delete)
 		echo "<form action='?database_delete=1' method='post'>";
 		echo "<div class='confirm'>";
 		echo sprintf($lang['ques_del_db'],htmlencode($db->getPath()))."<br/><br/>";
@@ -4124,7 +4124,7 @@ echo $lang['free_software']." <a href='".DONATE_URL."' target='_blank' style='fo
 printf($lang['page_gen'], $pageTimer);
 echo "</span>";
 echo "</td></tr></table>";
-$db->close(); //close the database
+$db->close(); //close the dataManager
 echo "</body>";
 echo "</html>";
 
@@ -4231,11 +4231,11 @@ class Authorization
 
 }
 // Database class
-// Generic database abstraction class to manage interaction with database without worrying about SQLite vs. PHP versions
+// Generic dataManager abstraction class to manage interaction with dataManager without worrying about SQLite vs. PHP versions
 //
 class Database
 {
-	protected $db; //reference to the DB object
+	protected $db; //reference to the Db object
 	protected $type; //the extension for PHP that handles SQLite
 	protected $data;
 	protected $lastResult;
@@ -4247,7 +4247,7 @@ class Database
 		$this->data = $data;
 		try
 		{
-			if(!file_exists($this->data["path"]) && !is_writable(dirname($this->data["path"]))) //make sure the containing directory is writable if the database does not exist
+			if(!file_exists($this->data["path"]) && !is_writable(dirname($this->data["path"]))) //make sure the containing directory is writable if the dataManager does not exist
 			{
 				echo "<div class='confirm' style='margin:20px;'>";
 				printf($lang['db_not_writeable'], htmlencode($this->data["path"]), htmlencode(dirname($this->data["path"])));
@@ -4380,37 +4380,37 @@ class Database
 		return $this->type;
 	}
 
-	//get the name of the database
+	//get the name of the dataManager
 	public function getName()
 	{
 		return $this->data["name"];
 	}
 
-	//get the filename of the database
+	//get the filename of the dataManager
 	public function getPath()
 	{
 		return $this->data["path"];
 	}
 
-	//is the db-file writable?
+	//is the dataManager-file writable?
 	public function isWritable()
 	{
 		return $this->data["writable"];
 	}
 
-	//is the db-folder writable?
+	//is the dataManager-folder writable?
 	public function isDirWritable()
 	{
 		return $this->data["writable_dir"];
 	}
 
-	//get the version of the database
+	//get the version of the dataManager
 	public function getVersion()
 	{
 		if(file_exists($this->data['path'])) //make sure file exists before getting its contents
 		{
-			$content = strtolower(file_get_contents($this->data['path'], NULL, NULL, 0, 40)); //get the first 40 characters of the database file
-			$p = strpos($content, "** this file contains an sqlite 2"); //this text is at the beginning of every SQLite2 database
+			$content = strtolower(file_get_contents($this->data['path'], NULL, NULL, 0, 40)); //get the first 40 characters of the dataManager file
+			$p = strpos($content, "** this file contains an sqlite 2"); //this text is at the beginning of every SQLite2 dataManager
 			if($p!==false) //the text is found - this is version 2
 				return 2;
 			else
@@ -4422,13 +4422,13 @@ class Database
 		}
 	}
 
-	//get the size of the database (in KB)
+	//get the size of the dataManager (in KB)
 	public function getSize()
 	{
 		return round(filesize($this->data["path"])*0.0009765625, 1);
 	}
 
-	//get the last modified time of database
+	//get the last modified time of dataManager
 	public function getDate()
 	{
 		global $lang;
