@@ -31,7 +31,7 @@ The following scheme provide a brief description of each used files in the proje
     │   addingUser.php       ---->  adding a user .
     │   addingUserPage.php   ---->  adding a user view (HTML)
     │   deleteUser.php       ---->  delete a user 
-    │   doDetails.php        ---->  contain commands that delete and reply a message 
+    │   doDetails.php        ---->  containnig commands that delete and reply a message 
     │   editPassword.php     ---->  modify the password 
     │   editPasswordPage.php ---->  modify the password view (HTML) 
     │   editUser.php         ---->  modify a user 
@@ -42,7 +42,7 @@ The following scheme provide a brief description of each used files in the proje
     │   listUser.php         ---->  list of all users 
     │   login.php            ---->  the login page 
     │   loginPage.php        ---->  the login page view
-    │   logout.php           ---->  contains the logout commands 
+    │   logout.php           ---->  containnig the logout commands 
     │   messageDetails.php   ---->  view page of the details of a message 
     │   phpliteadmin.php     ---->
     │   sentBox.php          ---->  the outbox 
