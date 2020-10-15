@@ -10,10 +10,10 @@ It therefore consists to develop a very simple web application which allow users
   ### Main features
   The application offer many features for each type of user .As said previously,we can use the messaging application as a collaborator or as an administrator.
   By using it as a administrator you can :
-     - 1.Add,delete or modify  a user
-     - 2.Send and Read message as like reply for them .you can also delete a message . 
-     - 3.Modify his password 
-     - 4.Consult the main directory of all users
+     * 1.Add,delete or modify  a user
+     * 2.Send and Read message as like reply for them .you can also delete a message . 
+     * 3.Modify his password 
+     * 4.Consult the main directory of all users
       
   In the other hand ,If you use the application as an collaborator ,you will get the same features as the administrator in the point 2 and 3 .  
   
