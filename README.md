@@ -63,5 +63,14 @@ The following scheme provide a brief description of each used files in the proje
             Db.php           ----> Object take care of database connection and most used function 
 ```
 ### Quick start
+The main project directory provide two scripts thats take care of starting and stoping the application.Simply it's set of docker commands thats run a container named "Twink".
+*      start.sh:
+   ```bash
+   ```
+*      stop.sh:
+   ```bash
+   
+   ```
+
 ### How to use 
  
