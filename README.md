@@ -64,7 +64,7 @@ The following scheme provide a brief description of each used files in the proje
 ```
 ### Quick start
 The main project directory provide two scripts thats take care of starting and stoping the application.Simply it's set of docker commands thats run a container named "Twink".
-*      start.sh:
+*     start.sh:
 
    ```bash
    # pull and run a container named "Twink"
@@ -74,7 +74,8 @@ The main project directory provide two scripts thats take care of starting and s
    docker exec -u root sti_project service nginx start
    docker exec -u root sti_project service php5-fpm start
    ```   
-*      stop.sh:
+   
+*     stop.sh:
 
    ```bash
    #stop the conatainer
