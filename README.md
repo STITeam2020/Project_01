@@ -1,7 +1,6 @@
  
 # Messaging app                                                                                                        
-
-                                                                       <p align="center">
+<p align="center">
   <img width="200" height="200" src=picture/logo.jpg>
 </p>                                                                                 
 ### Introduction 
