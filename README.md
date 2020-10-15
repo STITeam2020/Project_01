@@ -85,4 +85,14 @@ The main project directory provide two scripts thats take care of starting and s
    ```
 
 ### How to use 
- 
+ The following 
+##### Authentication
+##### The Inbox
+##### The Outbox
+##### Write a message
+##### Modify password
+##### Try it like an Administrator 
+###### Consult all users 
+###### Modify or delete a user
+###### Add a new user
+
