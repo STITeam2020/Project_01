@@ -87,6 +87,11 @@ The main project directory provide two scripts thats take care of starting and s
 
 ### How to use 
  The following 
+| username         | password      | admin |
+| -----------------|:-------------:| -----:|
+| admin@heig-vd.ch | admin         | yes   |
+| zied@heig-vd.ch  | zied          | no    |
+| walid@heig-vd.ch | walid         | no    |
 ##### Authentication
 ##### The Inbox
 ##### The Outbox
