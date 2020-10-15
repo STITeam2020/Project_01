@@ -18,45 +18,47 @@ It therefore consists to develop a very simple web application which allow users
   In the other hand ,If you use the application as an collaborator ,you will get the same features as the administrator in the point (2) and (3) .  
   
 ### Main structure 
+
 ```shell
-├───databases
+          File                   |           Use
+---------------------------------|---------------------------------------------
+├───databases                ----> Contain the database 
 │       database.sqlite
 │
 └───html
-    │   addingUser.php
-    │   addingUserPage.php
-    │   deleteUser.php
-    │   doDetails.php
-    │   editPassword.php
-    │   editPasswordPage.php
-    │   editUser.php
-    │   editUserPage.php
-    │   header.php
-    │   includes.php
-    │   index.php
-    │   link.php
-    │   listUser.php
-    │   login.php
-    │   loginPage.php
-    │   logout.php
-    │   messageDetails.php
-    │   phpliteadmin.php
-    │   sentBox.php
-    │   success.php
-    │   write.php
-    │   writeMessagePage.php
+    │   addingUser.php       ---->  adding a user .
+    │   addingUserPage.php   ---->  adding a user view (HTML)
+    │   deleteUser.php       ---->  delete a user 
+    │   doDetails.php        ---->  contain commands that delete and reply a message 
+    │   editPassword.php     ---->  modify the password 
+    │   editPasswordPage.php ---->  modify the password view (HTML) 
+    │   editUser.php         ---->  modify a user 
+    │   editUserPage.php     ---->  modify user view
+    │   header.php           ---->  the header of all pages ( used for navigation )
+    │   includes.php         ---->  by including this file we keep the current session
+    │   index.php            ---->  the home page
+    │   listUser.php         ---->  list of all users 
+    │   login.php            ---->  the login page 
+    │   loginPage.php        ---->  the login page view
+    │   logout.php           ---->  contains the logout commands 
+    │   messageDetails.php   ---->  view page of the details of a message 
+    │   phpliteadmin.php     ---->
+    │   sentBox.php          ---->  the outbox 
+    │   success.php          ---->  page indicate the succuess of operation
+    │   write.php            ---->  write a message commands 
+    │   writeMessagePage.php ---->  write a message view
     │
-    ├───assets
+    ├───assets               ----> all bootstap and css files 
     │   ├───bootstrap
     │   ├───css
     │   └───img
     │
-    ├───controller
-    │       Message.php
-    │       User.php
+    ├───controller           
+    │       Message.php      ----> object contains all function for a user 
+    │       User.php         ---->  object contains all function of message
     │
-    └───dataManager
-            Db.php
+    └───dataManager              
+            Db.php           ----> Object take care of database connection and most used function 
 ```
 ### Quick start
 ### How to use 
