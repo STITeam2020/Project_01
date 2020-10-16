@@ -125,7 +125,7 @@ This is the twin page of the previeus one ,because it simply show all sent messa
 
 ##### Write a message
 Here one of the most important pages .it is allow the user to send a message and select the destination (in our case we can choose only one destination ):
-![outbox](picture/outbox.png)
+![outbox](picture/write.png)
 
 ##### Modify password
 One of the bases features for any application is to allow a user to change his password ,the following page give as this ability:
