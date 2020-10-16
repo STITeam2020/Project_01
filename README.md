@@ -1,5 +1,5 @@
                                                                                                          
-<p align="right">
+<p align="center">
   <img width="200" height="200" src=picture/logo.jpg>
 </p> 
 
@@ -87,8 +87,8 @@ The main project directory provide two scripts thats take care of starting and s
    docker run -ti -v "$PWD/site":/usr/share/nginx/ -d -p 8080:80 --name Twink --hostname sti arubinst/sti:project2018
 
    # run the web and PHP servers 
-   docker exec -u root sti_project service nginx start
-   docker exec -u root sti_project service php5-fpm start
+   docker exec -u root Twink service nginx start
+   docker exec -u root Twink service php5-fpm start
    ```   
    
 *     stop.sh:
