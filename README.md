@@ -1,5 +1,5 @@
                                                                                                          
-<p align="center">
+<p align="right">
   <img width="200" height="200" src=picture/logo.jpg>
 </p> 
 
@@ -101,19 +101,44 @@ The main project directory provide two scripts thats take care of starting and s
    ```
 
 ### How to use 
- The following 
+ The following table contains a list of pre-popelated users in the database hopping to facilate the first use use and the test stage of the application .
+ 
 | username         | password      | admin |
 | -----------------|:-------------:| -----:|
 | admin@heig-vd.ch | admin         | yes   |
 | zied@heig-vd.ch  | zied          | no    |
 | walid@heig-vd.ch | walid         | no    |
-##### Authentication
-##### The Inbox
-##### The Outbox
-##### Write a message
-##### Modify password
-##### Try it like an Administrator 
-###### Consult all users 
-###### Modify or delete a user
-###### Add a new user
+|maxime@heig-vd.ch | maxime        | no    |
 
+##### Authentication
+ The Login page allows a user  to gain access to the application. The user will authenticate on this page, typically by entering a username and password.
+ here is a screen shot about the graphical interface of this page :
+ ![login](picture/login.png)
+
+##### The Inbox
+This page is simply an overview of all recieved messages by the current user .Each line contains some flags that give the user some informations about the message (date ,the sender,seen or not ).We simply can explore the message by clicking on details .This last action allow the user to consult the message and also to reply it .
+ ![inbox](picture/inbox.png)
+
+##### The Outbox
+This is the twin page of the previeus one ,because it simply show all sent messages :
+![inbox](picture/inbox.png)
+
+##### Write a message
+Here one of the most important pages .it is allow the user to send a message and select the destination (in our case we can choose only one destination ):
+![outbox](picture/outbox.png)
+
+##### Modify password
+One of the bases features for any application is to allow a user to change his password ,the following page give as this ability:
+![modify](picture/modifypassword.png)
+
+##### Try it like an Administrator 
+The administrator have some privilege he can consult the list of all users ,also he can modify or delete a  user and even adding a new one ,the following sections give as 
+an idea how a sample administrator perform those features:
+###### Consult all users 
+![alluser](picture/alluser.png)
+
+###### Modify or delete a user
+![modifyuser](picture/modifyuser.png)
+
+###### Add a new user
+![adduser](picture/adduser.png)
