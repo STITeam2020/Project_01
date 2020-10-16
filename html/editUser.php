@@ -14,5 +14,5 @@ if (isset($_POST["active"]))
 
 $user->modifyUser($_POST['password'], $admin, $active);
 
-header("Location: success.php");
+header("Location: confirmation.php");
 exit;

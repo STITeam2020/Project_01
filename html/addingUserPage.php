@@ -34,7 +34,7 @@ if (!isset($_SESSION["user"]))
                             </div>
 
                             <div class="col-md-5">
-                                <label for="target" class="col-form-label">Mot de passe</label>
+                                <label for="target" class="col-form-label">Password</label>
                                 <input type="text" name="password" id="password" class="form-control"
                                        placeholder="Password">
                             </div>

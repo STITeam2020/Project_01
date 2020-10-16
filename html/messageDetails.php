@@ -5,7 +5,6 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/includes.php';
 if (!isset($_SESSION["user"])) {
   header("location: loginPage.php");
 }
-
 $message = Message::lookForMessage($_GET['id']);
 $message->seen();
 $sender = User::lookForUser($message->sender_email);
@@ -20,7 +19,6 @@ $sender = User::lookForUser($message->sender_email);
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel ="stylesheet" href="assets/bootstrap/bootstrap.css">
 	<link rel ="stylesheet" href="assets/css/specialStyle.css">
-	
     <title>Twink</title>
 </head>
 <body>

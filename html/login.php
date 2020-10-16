@@ -4,10 +4,9 @@ use dataManager\Db;
 use controller\User;
 
 include_once $_SERVER['DOCUMENT_ROOT'] . '/includes.php';
-$result = Db::seekUser($_POST["email"]);
+$user = Db::seekUser($_POST["email"]);
 
-if ($result) {
-    $user = $result;
+if ($user) {
     if ($user["password"] == $_POST["password"] && $user["active"] == 1) {
         $currentUser = new User($user["email"], $user["password"], $user["admin"], $user["active"]);
         $_SESSION["user"] = $currentUser;

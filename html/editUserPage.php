@@ -53,20 +53,20 @@ $user = Db::seekUser($_GET['email']);
                         </div>
                         <div class="form-group row">
                             <div class="col-md-5">
+                                <label for="active" class="col-form-label">Active</label>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="checkbox" <?php if ($user["active"] == 1) echo 'checked'; ?> value="active"
+                                       name="active" id="active" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-5">
                                 <label for="admin" class="col-form-label">Admin</label>
                             </div>
                             <div class="col-md-6">
                                 <input type="checkbox" <?php if ($user["admin"] == 1) echo 'checked'; ?> value="admin"
                                        name="admin" id="admin" class="form-control">
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <div class="col-md-5">
-                                <label for="active" class="col-form-label">Actif</label>
-                            </div>
-                            <div class="col-md-6">
-                                <input type="checkbox" <?php if ($user["active"] == 1) echo 'checked'; ?> value="active"
-                                       name="active" id="active" class="form-control">
                             </div>
                         </div>
                         <div class="form-group row text-center">

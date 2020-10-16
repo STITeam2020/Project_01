@@ -3,8 +3,6 @@ include_once $_SERVER['DOCUMENT_ROOT'] . '/includes.php';
 
 if (!isset($_SESSION["user"]))
     header("location: loginPage.php");
-
-$_SESSION["menu"] = "Edit password";
 $user = $_SESSION['user'];
 ?>
 

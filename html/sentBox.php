@@ -36,33 +36,28 @@ if (!isset($_SESSION["user"])) {
                             <th scope="col">Date</th>
                             <th scope="col">Status</th>
                             <th scope="col"></th>
-
                         </tr>
                         </thead>
-
                         <?php
-                        $allmessages = $_SESSION["user"]->myMessages();
+                        $allMessages = $_SESSION["user"]->sentMessages();
                         ?>
-
                         <tbody>
                         <tr>
-                            <?php foreach ($allmessages
-
-                            as $data){ ?>
+                            <?php foreach ($allMessages
+                            as $msg){ ?>
                         <tr>
-                            <td><?= $data->object; ?></td>
-                            <td><?= User::lookForUser($data->receiver_email)->email; ?></td>
-                            <td><?= $data->date ?></td>
-
-                            <?php if ($data->status == 1) { ?>
+                            <td><?= $msg->object; ?></td>
+                            <td><?= User::lookForUser($msg->receiver_email)->email; ?></td>
+                            <td><?= $msg->date ?></td>
+                            <?php if ($msg->status == 1) { ?>
                                 <td>Seen</td>
                             <?php } else { ?>
                                 <td>Not Seen</td>
                             <?php } ?>
-                            <td><a href="messageDetails.php?id=<?= $data->id ?>">Show</a></td>
+                            <td><a href="messageDetails.php?id=<?= $msg->id ?>">Show</a></td>
                         </tr>
                         <?php } ?>
-                        <?php if (!$allmessages) { ?>
+                        <?php if (!$allMessages) { ?>
                             <tr>
                                 <td colspan="7" class="text-center">Empty !</td>
                             </tr>

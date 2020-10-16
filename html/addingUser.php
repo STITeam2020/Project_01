@@ -9,6 +9,6 @@ if (isset($_POST["admin"]))
     $admin = 1;
 
 Db::addUser($_POST["email"], $_POST["password"], $admin);
-header("Location: success.php");
+header("Location: confirmation.php");
 exit;
 ?>
