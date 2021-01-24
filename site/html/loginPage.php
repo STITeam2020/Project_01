@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+<script src="https://www.google.com/recaptcha/api.js"></script>
 <head>
     <link rel="stylesheet" type="text/css" href="assets/css/specialStyle.css">
 </head>
-
 <body>
 <center>
     <div class="card" align="center">
@@ -15,6 +15,7 @@
                 <br/><br/>
                 <h1>Password</h1>
                 <input type="password" name="password" placeholder="*****">
+                <div class="g-recaptcha" data-sitekey="<?php echo '6LezgDkaAAAAALWRrN91NZTf0kGUIyzKn26ZbtYA'; ?>"></div>
                 <br/><br/>
                 <input type="submit" value="LogIn" style="margin:20px 20px">
         </div>

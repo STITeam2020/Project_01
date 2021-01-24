@@ -6,7 +6,10 @@ include_once $_SERVER['DOCUMENT_ROOT'] . '/includes.php';
 if (!isset($_SESSION["user"])) {
     header("location: loginPage.php");
 }
-
+if($_SESSION['user']-> admin == 0 ) {
+    header("location: loginPage.php");
+    exit;
+}
 
 ?>
 

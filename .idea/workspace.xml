@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b412c3a1-e254-415d-9e7b-57647d1b5c03" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/site/databases/database.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/site/databases/database.sqlite" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/html/addingUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/html/addingUser.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/html/addingUserPage.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/html/addingUserPage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/html/deleteUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/html/deleteUser.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/html/editPassword.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/html/editPassword.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/html/editUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/html/editUser.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/html/editUserPage.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/html/editUserPage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/html/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/html/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/html/listUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/html/listUser.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/html/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/html/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/html/loginPage.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/html/loginPage.php" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1nUaCIL0GGQJdEOLYCp3gEnxVq4" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Application-de-messagerie-S-curis-e/site" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b412c3a1-e254-415d-9e7b-57647d1b5c03" name="Default Changelist" comment="" />
+      <created>1611446997579</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1611446997579</updated>
+      <workItem from="1611447002083" duration="19955000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="549" y="187" key="FileChooserDialogImpl" timestamp="1611523488413">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="549" y="187" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1611523488413" />
+    <state width="189" height="457" key="HiddenNamespacesPopup" timestamp="1611491367490">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="189" height="457" key="HiddenNamespacesPopup/0.0.1536.864@0.0.1536.864" timestamp="1611491367490" />
+    <state x="604" y="356" key="NewPhpFileDialog" timestamp="1611523887902">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="604" y="356" key="NewPhpFileDialog/0.0.1536.864@0.0.1536.864" timestamp="1611523887902" />
+    <state x="93" y="93" width="1350" height="678" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1611527591928">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="93" y="93" width="1350" height="678" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1536.864@0.0.1536.864" timestamp="1611527591928" />
+    <state x="93" y="93" width="1350" height="678" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1611527591928">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="93" y="93" width="1350" height="678" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1536.864@0.0.1536.864" timestamp="1611527591928" />
+  </component>
+</project>

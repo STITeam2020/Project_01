@@ -3,7 +3,10 @@
 use controller\User;
 
 include_once $_SERVER['DOCUMENT_ROOT'] . '/includes.php';
-
+if($_SESSION['user']-> admin == 0 ) {
+    header("location: loginPage.php");
+    exit;
+}
 $user = User::lookForUser($_POST["email"]);
 $admin = 0;
 $active = 0;

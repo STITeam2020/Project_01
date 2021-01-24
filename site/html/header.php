@@ -21,11 +21,14 @@
             <li class="nav-item">
                 <span <?php if ($_SESSION['user']->admin == 0) echo "style ='display:none;'"; ?>>
                     <a class="nav-link"
-                       href="listUser.php">Users List</a></span>
+                       href="listUser.php">Users List</a>
+                    <li
+                     class="nav-item">
+                  <a class="nav-link" href="addingUserPage.php">Add user</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="addingUserPage.php">Add user</a>
+                </span>
             </li>
+
             <li class="nav-item">
                 <a class="nav-link" href="logout.php">Log out</a>
             </li>
